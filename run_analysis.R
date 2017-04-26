@@ -58,3 +58,5 @@ ExtData <-data.table(ExtData)
 Project <- aggregate(.~Subject + Activity, ExtData, mean)
 Project <- Project[order(Project$Subject, Project$Activity),]
 write.table(Project, file = "Course3/Week4/UCI HAR Dataset/ProjectWk4.txt", row.names= FALSE)
+
+ReadProj <-read.table("C:/RWorkingDir-DMF/Course3/Week4/UCI HAR Dataset/ProjectWk4.txt", header = TRUE)
