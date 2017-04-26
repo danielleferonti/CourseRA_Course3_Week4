@@ -25,7 +25,7 @@ CombinedData <-cbind(featcomb,actcomb,subjectcomb)
 ##mean & SD
 
 Mean_SD <- grep(".*Mean.*|*.Std.*", names(CombinedData), ignore.case = TRUE)
-MSDCols<- c(Mean_SD , 562, 563)
+MSDCols<- c(562, 563, Mean_SD)
 
 ExtData <-CombinedData[,MSDCols]
 
