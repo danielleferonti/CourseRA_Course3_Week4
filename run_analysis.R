@@ -1,6 +1,7 @@
 ##reading data
 
 library(dplyr)
+library(data.table)
 featurenames <-read.table("C:/RWorkingDir-DMF/Course3/Week4/UCI HAR Dataset/features.txt")
 activitylabels <- read.table("C:/RWorkingDir-DMF/Course3/Week4/UCI HAR Dataset/activity_labels.txt", header = FALSE)
 
